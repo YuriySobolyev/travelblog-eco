@@ -92,7 +92,7 @@ header, header a, header a:visited, header p {
 
 header {
     width: 100%;
-    height: 100dvh;
+    height: 100lvh;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -210,7 +210,7 @@ nav {
 .nav__block {
     position: absolute;
     left: 0;
-    top: -405px;
+    top: -408px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -1008,12 +1008,13 @@ footer {
         margin: 41px 0 60px 0;
         justify-content: flex-start;
         align-items: center;
-        background: #f0ffff36;
         gap: 10px;
         width: 647px;
         height: 39px;
         font-size: 16px;
+
         background: none;
+        backdrop-filter: blur(0);
     }
 
     .hero_text .social-btns span svg {
