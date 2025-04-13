@@ -235,7 +235,7 @@ nav {
 .nav__block {
     position: absolute;
     left: 0;
-    top: -408px;
+    top: -420px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -297,6 +297,48 @@ nav {
 .toggle_active .line3 {
     transform: rotate(-45deg);
 }
+
+/*search*/
+
+.search {
+    display: flex;
+    width: 54px;
+    height: 54px;
+    position: relative;
+    transition: width .5s linear;
+    margin-top: 15px;
+}
+
+.search:hover {
+    width: 200px;
+}
+
+.search:hover .search__btn {
+    background: url("../img/search.svg");
+    display: none;
+}
+
+.search input {
+    display: block;
+    width: 100%;
+    visibility: hidden;
+}
+
+.search:hover input {
+    visibility: visible;
+    background: var(--text-light);
+    color: var(--dark_block);
+}
+
+.search .search__btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 54px;
+    height: 54px;
+    background: url("../img/search.svg") no-repeat center;
+}
+
 
 /*nav*/
 
@@ -1068,7 +1110,8 @@ footer {
     .categories-list,
     .destinations-title,
     .nav__item,
-    .category-nav-list {
+    .category-nav-list,
+    .search{
         margin: 0;
     }
 
